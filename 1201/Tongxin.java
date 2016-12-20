@@ -20,8 +20,8 @@ class Input implements Runnable
             {
                  if (x==0)
                 {
-                    r.name = "һ��һ��";
-                    r.sex  = "����";
+                    r.name = "娑撯偓闁跨喐鏋婚幏铚傜闁跨喐鏋婚幏锟�";
+                    r.sex  = "闁跨喐鏋婚幏鐑芥晸閺傘倖瀚�";
                 }
             else
                 {

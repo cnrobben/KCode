@@ -9,7 +9,7 @@ class Resource
         try{this.wait();}catch(InterruptedException e){}
         count++;
         this.name =name+count;
-        System.out.println(Thread.currentThread().getName()+".........Éú²úµÚ"+this.count+"Ö»"+this.name);
+        System.out.println(Thread.currentThread().getName()+".........é¢ç†¶éª‡é‘°ï¿½"+this.count+"é‘ã‚‰è…‘"+this.name);
         this.flag = true ;
         notify();     
     }
@@ -17,7 +17,7 @@ class Resource
     {
         while(!this.flag)
         try{this.wait();}catch(InterruptedException e){}
-        System.out.println(Thread.currentThread().getName()+".........Ïû·ÑÁËµÚ"+this.count+"Ö»"+this.name);
+        System.out.println(Thread.currentThread().getName()+".........å¨‘å £å‚é‘°ï¿½"+this.count+"é‘ã‚‰è…‘"+this.name);
         this.flag = false ;
         notify();
     }
@@ -32,7 +32,7 @@ class Producer  implements Runnable
     public void run()
     {   
         while(true)
-        r.set("¿¾Ñ¼");
+        r.set("é‘ã‚‰è…‘");
     }
 }
 
